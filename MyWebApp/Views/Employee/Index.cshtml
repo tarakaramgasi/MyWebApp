@@ -1,0 +1,50 @@
+﻿@model MyWebApp.Models.Employee
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using(Html.BeginForm("Create","Employee",FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <th colspan="2" align="center">Enter Employee Details</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            EmployeeID:
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(model => model.EmployeeID)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Employee Name:
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(model => model.EmployeeName)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Employee Salary:
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(model => model.Salary)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit"/>
+                        </td>
+                    </tr>
+                </table>
+            }
+    </div>
+</body>
+</html>
+

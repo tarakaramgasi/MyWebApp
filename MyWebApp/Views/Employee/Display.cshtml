@@ -1,0 +1,29 @@
+﻿@model MyWebApp.Models.Temp
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+
+        @using(Html.BeginForm("DisplyEmployees", "Employee", FormMethod.Get))
+            {
+                @Html.TextBoxFor(model => model.InputValue)
+                <input type="submit" value="Submit" />
+            }
+
+
+
+    </div>
+</body>
+</html>
+

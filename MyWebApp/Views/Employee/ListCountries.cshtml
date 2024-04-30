@@ -1,0 +1,19 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListCountries</title>
+</head>
+<body>
+    <div>
+        <select>
+            @foreach (var item in Model)
+            {
+                <option value="@item">@item</option>
+            }
+
+        </select>
+    </div>
+</body>
+</html>
+
